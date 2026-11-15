@@ -1,0 +1,221 @@
+{
+  "emails": [
+    {
+      "id": "s01", "difficulty": 1, "isScam": true,
+      "fromName": "Bluefin Bank Security", "fromAddress": "alerts@bluefin-bank-verify.co",
+      "subject": "URGENT: Your account will be LOCKED in 1 hour",
+      "body": "We detected unusual activity. Verify your password now or lose access to your account forever.",
+      "linkText": "Verify my account", "linkUrl": "http://bluefin-bank-verify.co/login", "attachment": "",
+      "clues": ["Urgency", "Asks for password", "Lookalike domain"],
+      "explanation": "Real banks never ask for your password by email, and panic deadlines are a classic pressure trick."
+    },
+    {
+      "id": "s02", "difficulty": 1, "isScam": true,
+      "fromName": "Prize Department", "fromAddress": "winner@lucky-draw-global.biz",
+      "subject": "Congratulations!!! You won a free tablet",
+      "body": "You were randomly selected! Just pay $4.99 shipping to claim your prize today.",
+      "linkText": "Claim prize", "linkUrl": "http://lucky-draw-global.biz/pay", "attachment": "",
+      "clues": ["Too good to be true", "Asks for payment"],
+      "explanation": "You can't win a contest you never entered — 'small fee' prizes are just a way to steal card details."
+    },
+    {
+      "id": "s03", "difficulty": 1, "isScam": true,
+      "fromName": "IT Help Desk", "fromAddress": "helpdesk.support2291@freemail.example",
+      "subject": "Mailbox full - action required",
+      "body": "Your mailbox is 99% full. Log in below within 24 hours or your emails will be deleted.",
+      "linkText": "Increase storage", "linkUrl": "http://mail-storage-upgrade.example/login", "attachment": "",
+      "clues": ["Free email address for 'IT'", "Urgency", "Login link"],
+      "explanation": "Your real IT team writes from your organization's domain, not a free email account."
+    },
+    {
+      "id": "s04", "difficulty": 1, "isScam": true,
+      "fromName": "ShellShip Delivery", "fromAddress": "noreply@she11ship-track.com",
+      "subject": "Package on hold: unpaid customs fee",
+      "body": "Your parcel can't be delivered. Pay the $1.95 customs fee to reschedule.",
+      "linkText": "Pay now", "linkUrl": "http://she11ship-track.com/fee", "attachment": "",
+      "clues": ["Lookalike domain (1 instead of l)", "Asks for payment"],
+      "explanation": "Look closely: 'she11ship' uses the number 1 twice instead of the letter L."
+    },
+    {
+      "id": "s05", "difficulty": 1, "isScam": true,
+      "fromName": "Your CEO", "fromAddress": "ceo.office.private@quickmail.example",
+      "subject": "Quick favor - keep this confidential",
+      "body": "I'm in a meeting. Buy 5 gift cards for a client and send me the codes. I'll pay you back.",
+      "linkText": "", "linkUrl": "", "attachment": "",
+      "clues": ["Gift card request", "Secrecy", "Personal email for a boss"],
+      "explanation": "No real boss asks for gift card codes by email — this is a famous 'CEO fraud' scam."
+    },
+    {
+      "id": "s06", "difficulty": 2, "isScam": true,
+      "fromName": "Tidewatch", "fromAddress": "billing@tidewatch-accounts.net",
+      "subject": "Payment declined - update your billing info",
+      "body": "We couldn't process your last payment. Update your card to keep watching.",
+      "linkText": "tidewatch.com/billing", "linkUrl": "http://tidewatch-accounts.net/card", "attachment": "",
+      "clues": ["Link text doesn't match real URL", "Lookalike domain"],
+      "explanation": "The link SAYS tidewatch.com but really goes to a different site — always check where a link goes."
+    },
+    {
+      "id": "s07", "difficulty": 2, "isScam": true,
+      "fromName": "HR Team", "fromAddress": "hr@company-benefits-portal.info",
+      "subject": "2027 salary adjustment - review attached",
+      "body": "Please review your updated salary document. Enable editing to view.",
+      "linkText": "", "linkUrl": "", "attachment": "Salary_Review_2027.docm",
+      "clues": ["Macro-enabled attachment (.docm)", "Outside domain", "'Enable editing'"],
+      "explanation": "'.docm' files can run hidden code — 'enable editing to view' is how malware gets in."
+    },
+    {
+      "id": "s08", "difficulty": 2, "isScam": true,
+      "fromName": "Driftbox Shared Files", "fromAddress": "share@driftbox-docs.app",
+      "subject": "Maria shared 'Invoice_Q4.pdf' with you",
+      "body": "You have a new shared document. Sign in with your email password to open it.",
+      "linkText": "Open document", "linkUrl": "http://driftbox-docs.app/signin", "attachment": "",
+      "clues": ["Asks for email password", "Unknown sender name", "Lookalike domain"],
+      "explanation": "File-sharing scams fake a document so you'll type your email password into their page."
+    },
+    {
+      "id": "s09", "difficulty": 2, "isScam": true,
+      "fromName": "Tax Refund Office", "fromAddress": "refunds@gov-tax-refund.org",
+      "subject": "You are eligible for a $742.18 refund",
+      "body": "Submit your bank details within 48 hours to receive your refund.",
+      "linkText": "Get refund", "linkUrl": "http://gov-tax-refund.org/claim", "attachment": "",
+      "clues": ["Not a real government domain", "Asks for bank details", "Deadline"],
+      "explanation": "Government agencies don't email you asking for bank details — and their sites end in .gov."
+    },
+    {
+      "id": "s10", "difficulty": 3, "isScam": true,
+      "fromName": "Bluefin Bank", "fromAddress": "service@bluefinbank.com.secure-login.net",
+      "subject": "New sign-in from a new device",
+      "body": "We noticed a new sign-in. If this wasn't you, review your activity.",
+      "linkText": "Review activity", "linkUrl": "http://bluefinbank.com.secure-login.net/review", "attachment": "",
+      "clues": ["Real domain is at the END: secure-login.net", "Calm tone hides the trick"],
+      "explanation": "Read domains from the right: this is really 'secure-login.net' wearing the bank's name as a disguise."
+    },
+    {
+      "id": "s11", "difficulty": 3, "isScam": true,
+      "fromName": "Alex (Design Team)", "fromAddress": "alex.design@your-company.co",
+      "subject": "Re: updated logo files",
+      "body": "Hey! Here are the final logo files from today's meeting, let me know what you think.",
+      "linkText": "", "linkUrl": "", "attachment": "Logo_Final.pdf.exe",
+      "clues": ["Double extension .pdf.exe", "Slightly wrong company domain (.co)"],
+      "explanation": "'.pdf.exe' is a program pretending to be a PDF — opening it would run malware."
+    },
+    {
+      "id": "s12", "difficulty": 3, "isScam": true,
+      "fromName": "Account Recovery", "fromAddress": "no-reply@accounts-verify.example",
+      "subject": "Your verification code",
+      "body": "Someone is trying to recover your account. Reply with the 6-digit code we just texted you to stop them.",
+      "linkText": "", "linkUrl": "", "attachment": "",
+      "clues": ["Asks you to share a 2FA code", "Fake 'protect you' story"],
+      "explanation": "Never share a verification code — anyone asking for it is the person trying to break in."
+    },
+
+    {
+      "id": "l01", "difficulty": 1, "isScam": false,
+      "fromName": "Mom", "fromAddress": "mom.family@freemail.example",
+      "subject": "Dinner Sunday?",
+      "body": "Are you free Sunday at 6? I'm making plov. Bring a friend if you want!",
+      "linkText": "", "linkUrl": "", "attachment": "",
+      "clues": ["Known contact", "No links, no requests for money or info"],
+      "explanation": "A normal message from someone you know, asking nothing risky — totally safe."
+    },
+    {
+      "id": "l02", "difficulty": 1, "isScam": false,
+      "fromName": "Campus Library", "fromAddress": "library@university.example.edu",
+      "subject": "Reminder: book due Friday",
+      "body": "Your book 'Intro to Networks' is due Friday. You can renew it from your library account.",
+      "linkText": "university.example.edu/library", "linkUrl": "https://university.example.edu/library", "attachment": "",
+      "clues": ["Official .edu domain", "Link matches real URL", "No pressure"],
+      "explanation": "Real sender, matching link, and no urgency or requests — a normal reminder."
+    },
+    {
+      "id": "l03", "difficulty": 1, "isScam": false,
+      "fromName": "Study Group", "fromAddress": "jordan.k@university.example.edu",
+      "subject": "Notes from today",
+      "body": "Uploaded my notes to our shared folder. See you Thursday!",
+      "linkText": "", "linkUrl": "", "attachment": "",
+      "clues": ["Classmate's school address", "Nothing requested"],
+      "explanation": "A classmate sharing notes, no links or demands — safe."
+    },
+    {
+      "id": "l04", "difficulty": 1, "isScam": false,
+      "fromName": "Tidewatch", "fromAddress": "info@tidewatch.com",
+      "subject": "New this week: 5 shows we think you'll love",
+      "body": "Here's what's new this week. Happy watching!",
+      "linkText": "tidewatch.com/new", "linkUrl": "https://tidewatch.com/new", "attachment": "",
+      "clues": ["Real domain", "Link matches", "No account or payment request"],
+      "explanation": "A regular newsletter: real domain, honest link, and it doesn't ask you for anything."
+    },
+    {
+      "id": "l05", "difficulty": 1, "isScam": false,
+      "fromName": "Gym Front Desk", "fromAddress": "frontdesk@ironpeak-gym.com",
+      "subject": "Holiday hours",
+      "body": "We'll close at 4pm on Thursday for the holiday. Normal hours resume Friday.",
+      "linkText": "", "linkUrl": "", "attachment": "",
+      "clues": ["Simple info", "No links or requests"],
+      "explanation": "Pure information with nothing to click or give — safe."
+    },
+    {
+      "id": "l06", "difficulty": 2, "isScam": false,
+      "fromName": "Bluefin Bank", "fromAddress": "statements@bluefinbank.com",
+      "subject": "Your November statement is ready",
+      "body": "Your statement is ready. Sign in through our app or by typing bluefinbank.com into your browser.",
+      "linkText": "", "linkUrl": "", "attachment": "",
+      "clues": ["Real bank domain", "Tells you to go to the site yourself"],
+      "explanation": "Good sign: the bank tells you to open the site yourself instead of clicking a login link."
+    },
+    {
+      "id": "l07", "difficulty": 2, "isScam": false,
+      "fromName": "ShellShip", "fromAddress": "tracking@shellship.com",
+      "subject": "Your package was delivered",
+      "body": "Your package was delivered at 2:14 PM and left at the front door.",
+      "linkText": "shellship.com/track", "linkUrl": "https://shellship.com/track", "attachment": "",
+      "clues": ["Correct spelling of domain", "No payment request"],
+      "explanation": "Compare with the scam version: correct 'shellship' spelling and nothing to pay."
+    },
+    {
+      "id": "l08", "difficulty": 2, "isScam": false,
+      "fromName": "Professor Lee", "fromAddress": "s.lee@university.example.edu",
+      "subject": "Homework 4 posted",
+      "body": "Homework 4 is posted on the course site. Due next Tuesday before class.",
+      "linkText": "", "linkUrl": "", "attachment": "HW4_Instructions.pdf",
+      "clues": ["Official school address", "Normal PDF attachment you expected"],
+      "explanation": "Expected attachment, plain .pdf, from your real professor's address — safe."
+    },
+    {
+      "id": "l09", "difficulty": 2, "isScam": false,
+      "fromName": "Driftbox", "fromAddress": "no-reply@driftbox.com",
+      "subject": "You're using 80% of your storage",
+      "body": "You're close to your storage limit. You can manage files anytime in the Driftbox app.",
+      "linkText": "", "linkUrl": "", "attachment": "",
+      "clues": ["Real domain", "No deadline", "No password request"],
+      "explanation": "A calm heads-up from the real domain with no threat and no login link."
+    },
+    {
+      "id": "l10", "difficulty": 3, "isScam": false,
+      "fromName": "Bluefin Bank", "fromAddress": "security@bluefinbank.com",
+      "subject": "New sign-in to your account",
+      "body": "New sign-in on a new phone. If this was you, no action needed. If not, open the Bluefin app to secure your account.",
+      "linkText": "", "linkUrl": "", "attachment": "",
+      "clues": ["Real domain", "Sends you to the app, not a link"],
+      "explanation": "Real alerts often look scary too — but this one uses the real domain and no login link."
+    },
+    {
+      "id": "l11", "difficulty": 3, "isScam": false,
+      "fromName": "IT Services", "fromAddress": "it-services@university.example.edu",
+      "subject": "Scheduled maintenance Saturday 2–4 AM",
+      "body": "Email may be briefly unavailable during maintenance. No action is needed from you.",
+      "linkText": "", "linkUrl": "", "attachment": "",
+      "clues": ["Official domain", "'No action needed'"],
+      "explanation": "Real IT notices usually say 'no action needed' — they inform, they don't demand."
+    },
+    {
+      "id": "l12", "difficulty": 3, "isScam": false,
+      "fromName": "Alex (Design Team)", "fromAddress": "alex.design@your-company.com",
+      "subject": "Re: updated logo files",
+      "body": "Final logo files from today's meeting are in the shared team folder.",
+      "linkText": "", "linkUrl": "", "attachment": "Logo_Final.pdf",
+      "clues": ["Correct company domain (.com)", "Normal .pdf"],
+      "explanation": "Compare with the trap: right domain, a plain .pdf, and it matches a real meeting."
+    }
+  ]
+}
